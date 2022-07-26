@@ -1,15 +1,16 @@
 {
   "expo": {
-    "name": "src",
-    "slug": "src",
+    "name": "Kennedy Orthodontics",
+    "owner": "thoughtco",
+    "slug": "kennedy",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "assets/images/icons/Kennedy-logo@3x.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#BAAC98"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
