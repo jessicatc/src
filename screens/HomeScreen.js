@@ -18,11 +18,11 @@ export function HomeScreen() {
 
         <View style={ styles.container }>
 
-            <View style={ styles.menuContainer }>
+            {/* <View style={ styles.menuContainer }>
 
-                {/* <Text style={ styles.smallHeading }>Verification</Text> */}
+                <Text style={ styles.smallHeading }>Verification</Text>
 
-                {/* <View>
+                <View>
 
                     <View style={{ flexDirection: 'row', marginTop: 60, justifyContent: 'center' }}>
 
@@ -58,9 +58,9 @@ export function HomeScreen() {
 
                     </View>
 
-                </View> */}
+                </View>
 
-                {/* <View>
+                <View>
 
                     <View style={{ flexDirection: 'row', marginTop: 60, justifyContent: 'center' }}>
 
@@ -81,9 +81,9 @@ export function HomeScreen() {
                     <TextInput style={ styles.textInput } placeholder="01234567" placeholderTextColor='rgb(255, 0, 0)'></TextInput>
                     <Text style={ styles.errorMessage }>Please enter a valid registration</Text>
 
-                </View> */}
+                </View>
                 
-                {/* <View>
+                <View>
 
                     <View style={{ flexDirection: 'row', marginTop: 60, justifyContent: 'center' }}>
 
@@ -107,11 +107,11 @@ export function HomeScreen() {
 
                     </View>
 
-                </View> */}
+                </View>
 
-                {/* <Text style={ styles.smallHeading }>Registration</Text> */}
+                <Text style={ styles.smallHeading }>Registration</Text>
 
-                {/* <View>
+                <View>
 
                     <View style={{ flexDirection: 'row', marginTop: 60, justifyContent: 'center' }}>
 
@@ -127,9 +127,9 @@ export function HomeScreen() {
 
                     <TextInput style={ [styles.textInput, { width: 265, marginTop: 118 }] } placeholder="your@email.com" placeholderTextColor='rgba(44, 41, 36, 0.5)'></TextInput>
 
-                </View> */}
+                </View>
 
-                {/* <View>
+                <View>
 
                     <View style={{ flexDirection: 'row', marginTop: 60, justifyContent: 'center' }}>
 
@@ -145,11 +145,11 @@ export function HomeScreen() {
 
                     <TextInput style={ [styles.textInput, { width: 265, marginTop: 99 }] } placeholder="Password" placeholderTextColor='rgba(44, 41, 36, 0.5)'></TextInput>
 
-                </View> */}
+                </View>
 
                 <Text style={ styles.smallHeading }>Permissions</Text>
 
-                {/* <View>
+                <View>
 
                     <View style={{ flexDirection: 'row', marginTop: 60, justifyContent: 'center' }}>
 
@@ -179,7 +179,7 @@ export function HomeScreen() {
 
                     </View>
 
-                </View> */}
+                </View>
 
                 <View>
 
@@ -221,17 +221,97 @@ export function HomeScreen() {
                 
                 <Text style={ styles.buttonText }>Next</Text>
 
-                {/* <Text style={ styles.buttonText }>Submit</Text> */}
+                <Text style={ styles.buttonText }>Submit</Text>
 			
             </TouchableOpacity>
 
-            {/* <TouchableOpacity style={ [styles.button, { marginTop: 135, backgroundColor: 'rgb(244, 90, 7)' }] }>
+            <TouchableOpacity style={ [styles.button, { marginTop: 135, backgroundColor: 'rgb(244, 90, 7)' }] }>
                 
                 <Text style={ styles.buttonText }>Next</Text>
 
                 <Text style={ styles.buttonText }>Submit</Text>
 			
             </TouchableOpacity> */}
+
+            <View style={ [styles.menuContainer, { height: 572, maxHeight: '100%' }] }>
+
+                <Image source={require('../assets/images/menu-btm.png')} style={{ width: '100%', height: 107, position: 'absolute', bottom: -75, left: 0, zIndex: -1 }}></Image>
+
+                <Text style={ styles.largeHeader }>Hi Rachel, welcome back.</Text>
+
+                <View style={ [styles.infoBox, { marginTop: 33 }] }>
+                    
+                    <View style={ [styles.infoBoxButton, { marginTop: 18 }] }>
+
+                        <Image source={require('../assets/images/icons/arrow-black.png')} style={{ width: 16, height: 10, position: 'absolute', left: 11, top: 2 }}/>
+
+                        <Text style={ [styles.infoBoxButtonText, { marginLeft: 40 }] }>Next appointment</Text>
+
+                    </View>
+
+                    <View style={{ paddingLeft: 40 }}>
+
+                        <Text style={ [styles.infoBoxSubheading, { marginTop: 14 }] }>Monday</Text>
+
+                        <Text style={ [styles.infoBoxText, { marginTop: 6 }] }>28 September 2022</Text>
+
+                        <Text style={ styles.infoBoxText }>8.00am</Text>
+
+                        <Text style={ styles.infoBoxText }>Consultation</Text>
+
+                        <Text style={ [styles.infoBoxSubheading, { marginTop: 6 }] }>Ballymena</Text>
+
+                        <Image source={require('../assets/images/icons/grey-message.png')} style={{ width: 38, height: 38, position: 'absolute', bottom: 0, right: 30  }}/>
+
+                    </View>
+
+                </View>
+
+                <View style={ styles.infoBox }>
+                    
+                    <View style={ [styles.infoBoxButton, { marginTop: 18 }] }>
+
+                        <Image source={require('../assets/images/icons/arrow-black.png')} style={{ width: 16, height: 10, position: 'absolute', left: 11, top: 2 }}/>
+
+                        <Text style={ [styles.infoBoxButtonText, { marginLeft: 40 }] }>Please watch</Text>
+
+                    </View>
+
+                    <View style={{ paddingLeft: 40 }}>
+
+                        <Text style={ [styles.infoBoxText, { marginTop: 6 }] }>Preparing to have your braces fitted</Text>
+
+                        <Image source={require('../assets/images/icons/grey-play.png')} style={{ width: 38, height: 38, position: 'absolute', right: 30  }}/>
+
+                    </View>
+
+                </View>
+
+                <View style={ [styles.infoBox, { borderBottomWidth: 1 }] }>
+                    
+                    <View style={ [styles.infoBoxButton, { marginTop: 18 }] }>
+
+                        <Image source={require('../assets/images/icons/arrow-black.png')} style={{ width: 16, height: 10, position: 'absolute', left: 11, top: 2 }}/>
+
+                        <Text style={ [styles.infoBoxButtonText, { marginLeft: 40 }] }>Urgent</Text>
+
+                    </View>
+
+                    <View style={{ paddingLeft: 40 }}>
+
+                        <Text style={ [styles.infoBoxText, { marginTop: 6 }] }>Please update your medical history.</Text>
+
+                        <Image source={require('../assets/images/icons/grey-edit.png')} style={{ width: 38, height: 38, position: 'absolute', bottom: 15, right: 30  }}/>
+
+                    </View>
+
+                </View>
+
+            </View>
+
+            <View>
+
+            </View>
 
         </View>
 
@@ -240,6 +320,10 @@ export function HomeScreen() {
 }
 
 const styles = StyleSheet.create({
+    container: {
+        position: 'relative',
+        height: '100%',
+    },
     menuContainer: {
         alignItems: 'center',
         backgroundColor: '#BAAC98',
@@ -338,4 +422,41 @@ const styles = StyleSheet.create({
         fontFamily: 'Raleway-Medium',
         fontSize: 16,
     },
-  });
+    largeHeader: {
+        color: '#fff',
+        fontSize: 36,
+        lineHeight: 43.2,
+        fontFamily: 'Raleway-Regular',
+        maxWidth: 281,
+        width: '100%',
+        margin: 0,
+    },
+    infoBox: {
+        width: '100%',
+        borderTopWidth: 1,
+        borderColor: 'rgba(255, 255, 255, 0.2)',
+        paddingBottom: 15
+    },
+    infoBoxButtonText: {
+        color: '#2C2924',
+        textTransform: 'uppercase',
+        fontSize: 12,
+        fontFamily: 'Raleway-Medium',
+        letterSpacing: 0.24,
+        lineHeight: 16,
+    },
+    infoBoxSubheading: {
+        fontSize: 14,
+        fontFamily: 'Raleway-Medium',
+        letterSpacing: 0.24,
+        lineHeight: 16,
+        textTransform: 'uppercase',
+    },
+    infoBoxText: {
+        color: '#fff',
+        fontSize: 20,
+        fontFamily: 'Raleway-Medium',
+        lineHeight: 24,
+        maxWidth: 211,
+    },  
+});
